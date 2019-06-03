@@ -1,0 +1,9 @@
+<h1>Edit index.html on <a href="https://rustamata.github.io/">rustamata.github.io</a></h1>
+
+<% flash.each do |key, value| %>
+  <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
+</br>
+<%= button_to "    Add plugin   ", pages_update_path %>
+</br>
+<%= button_to "Remove plugin", pages_rollback_path %>
