@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  validates :login, presence: true, uniqueness: true  #!добавить индекс по логину для быстрого поиска
+  validates :login, presence: true
   validates :user_info, presence: true
 
   #Save user info in database

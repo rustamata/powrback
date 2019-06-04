@@ -4,5 +4,6 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :login
       t.text :user_info
     end
+    add_index :users, [:login]
   end
 end

@@ -31,4 +31,4 @@
 /config/master.key
 
 #Idea files
-.idea
+/.idea/*

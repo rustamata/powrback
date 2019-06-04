@@ -1,4 +1,4 @@
-<h1>Edit index.html on <a href="https://rustamata.github.io/">rustamata.github.io</a></h1>
+<h2>Edit index.html on <a href="https://rustamata.github.io/">rustamata.github.io</a></h2>
 
 <% flash.each do |key, value| %>
   <div class="alert alert-<%= key %>"><%= value %></div>
@@ -7,3 +7,7 @@
 <%= button_to "    Add plugin   ", pages_update_path %>
 </br>
 <%= button_to "Remove plugin", pages_rollback_path %>
+</br>
+</br>
+</br>
+<%= link_to "Click here to Logout", login_logout_path %>
