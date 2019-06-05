@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
 
   CLIENT_ID = ENV['GH_BASIC_CLIENT_ID']
   CLIENT_SECRET = ENV['GH_BASIC_SECRET_ID']
-  APP_NAME = "powerfulOAuth"
+  APP_NAME = ENV['GH_BASIC_APP_NAME']
 
   use Rack::Session::Pool, :cookie_only => false
 
