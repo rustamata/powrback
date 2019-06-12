@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  get '/', to: 'login#show'
+  root 'login#show'
   get '/login', to: 'login#show'
-  post '/login/github', to: 'login#github'
+  post '/login/oauth', to: 'login#oauth'
   get '/login/logout', to: 'login#logout'
   get '/callback', to: 'login#callback'
   get '/pages/edit', to: 'pages#edit'
